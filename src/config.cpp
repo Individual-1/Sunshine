@@ -1135,7 +1135,7 @@ namespace config {
     generic_f(vars, "dd_mode_remapping", video.dd.mode_remapping, dd::mode_remapping_from_view);
     bool_f(vars, "dd_wa_hdr_toggle", video.dd.wa.hdr_toggle);
 
-    int_between_f(vars, "min_fps_factor", video.min_fps_factor, {1, 3});
+    int_between_f(vars, "min_fps_factor", video.min_fps_factor, { 1, 15 });
 
     path_f(vars, "pkey", nvhttp.pkey);
     path_f(vars, "cert", nvhttp.cert);
